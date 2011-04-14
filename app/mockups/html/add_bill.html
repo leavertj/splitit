@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Add a Bill</title>
+	<meta name="author" content="Michael Whidby">
+	
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link type="text/css" href="../css/south-street/jquery-ui-1.8.11.custom.css" rel="Stylesheet" />	
+	
+	<script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.8.11.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#datepicker").datepicker();
+		});
+	</script>
+	<!-- Date: 2011-04-13 -->
+</head>
+<body>
+<div id="header">
+	<h1 id="logo">Letsplit.it</h1>
+	<ul id="top_links">
+		<li class="top_link">
+			<a class="link bottom_border" href="#">Settings</a>
+		</li>
+		<li class="top_link">
+			<a class="link bottom_border" href="#">Logout</a>
+		</li>
+	</ul>
+</div>
+<div id="body">
+	<ul class="main_links">
+		<li>
+			<a class="link top_border" href="home_page.html">Home</a>
+			<a class="link top_border" href="#">Groups</a>
+			<a class="link top_border" href="#">Bills</a>
+		</li>
+	</ul>
+	<div id="left_sidebar">
+		<p class="button add_bill">
+			<a class="link top_border bottom_border" href="add_bill.html">&#43; Add a bill</a>
+		</p>
+		<h3 class="sidebar_header">Groups</h3>
+		<ul class="sidebar_list">
+			<li class="sidebar_list_item">
+				<img class="sidebar_pic" src="http://placekitten.com/40/40">
+				<a class="sidebar_link" href="#">Apartment</a>
+			</li>
+			<li class="sidebar_list_item">
+				<img class="sidebar_pic" src="http://placekitten.com/40/40">
+				<a class="sidebar_link" href="#">Class Proj</a>
+			</li>
+		</ul>
+		<p class="button add_top_margin">
+			<a class="link top_border bottom_border" href="#">&#43; Create/Join Group</a>
+		</p>
+	</div>
+	<div class="main_content no_right_content">
+		<h2 class="main_title">Add a bill</h2>
+		<fieldset id="add_form">
+			<legend class="legend">Bill Details</legend>
+			<ol class="form_fields">
+				<li class="form_item first">
+					<label for="title">Bill Title</label><br />
+					<input id="title" class="input_field" />
+				</li>
+				<li class="form_item">
+					<label for="amount">Bill Amount</label><br />
+					<input id="amount" class="input_field" />
+				</li>
+				<li class="form_item">
+					<label for="datepicker">Date Paid/Due</label><br />
+					<input id="datepicker" class="input_field" />
+				</li>
+				<li class="form_item">
+					<label for="splitters">Who's splitting it?</label><br />
+					<input id="splitters" class="input_field" />
+					<ul class="group_picker">
+						<li>
+							<img src="http://placekitten.com/300/200" /><br />
+							Placeholder for choose group/people
+						</li>
+					</ul>
+		    	</li>
+			</ol>
+		<p id="submit" class="top_border bottom_border">
+			<a class="submit" href="#">Create Bill</a>
+		</p>
+		</fieldset>
+	</div>
+</div>
+</body>
+</html>
