@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Splitit::Application.config.secret_token = 'e3e85a4c9e3b068cecabd50c16522e5f3998a502f2a4841d67c04b970bf771754b0ff418c01aab1657119229f2c548222bb67ee044cb5701240f07c8c652289a'
+Splitit::Application.config.secret_token = '71a504cb8345a8e8deac169e56c62fad5b69e5a3b0969ff534804666090f73c45c9546a6db6f31fda04dfb5771e850fc62038bb7e63105091235fe91fb937cd7'

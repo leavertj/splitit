@@ -13,10 +13,14 @@ body {
 }
 
 #logo {
-	font-size: 28px;
+	font-size: 45px;
 	width: 150px;
 	float: left;
 	margin-left: 30px;
+}
+
+.green {
+	color: #A1C22D;
 }
 
 #top_links {
@@ -141,6 +145,11 @@ body {
 	width: 700px;
 }
 
+.no_left_content {
+	margin: 0 auto;
+	border: none;
+}
+
 .main_title {
 	font-size: 35px;
 	margin: 5px 10px;
@@ -198,6 +207,10 @@ body {
 	padding-top: 20px;
 }
 
+.center {
+	margin: 0 auto;
+}
+
 .legend {
 	font-size: 20px;
 }
@@ -244,4 +257,59 @@ body {
 #right_sidebar {
 	float: right;
 	width: 200px;
+}
+
+/* Quick split styling */
+#quicksplit {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #89AC10;
+	clear: both;
+}
+
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+.quicksplit_list {
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+
+.quicksplit_item {
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#quicksplit .input {
+	font-size: 20px;
+	border: 1px solid #666;
+	height: 30px;
+}
+
+#quicksplit .input:focus {
+	border: 2px solid #89AC10;
+}
+
+.quicksplit_name {
+	
+}
+
+.quicksplit_amount {
+	width: 110px;
+	text-align: center;
+}
+
+.quicksplit_title {
+	font-weight: bold;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	margin-right: 100px;
 }

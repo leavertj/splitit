@@ -1,0 +1,28 @@
+<h1>Create a Bill</h1>
+
+<%= form_for(@bill) do |f| %>
+	  <%= render 'shared/error_messages' %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :duedate %><br />
+    <%= f.text_field :duedate %>
+  </div>
+  <div class="field">
+    <%= f.label :group_id %><br />
+    <%= f.text_field :group_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create Bill" %>
+  </div>
+<% end %>
