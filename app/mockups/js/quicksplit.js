@@ -31,19 +31,19 @@ $(document).ready(function() {
 			}
 		}
 		//console.log(total);		
-		console.log("expectedContribution = " +expectedContribution);
-		console.log("owed");
-		console.dir(owed);
-		console.log("owers");
-		console.dir(owers);
-		console.log("neithers");
-		console.dir(neither);
-		console.log("BEFORE");
+		//console.log("expectedContribution = " +expectedContribution);
+		//console.log("owed");
+		//console.dir(owed);
+		//console.log("owers");
+		//console.dir(owers);
+		//console.log("neithers");
+		//console.dir(neither);
+		//console.log("BEFORE");
 		
 		for(var i = 0; i < owed.length; i++) {
 			var curr = owed[i];
-			var owed = curr.amountOwed;
-			var owedFromEachOwer = Math.abs((owed/owers.length).toFixed(2));
+			var owedAmt = curr.amountOwed;
+			var owedFromEachOwer = Math.abs((owedAmt/owers.length).toFixed(2));
 			
 			// add the person to each ower
 			for(var j = 0; j < owers.length; j++) {
@@ -63,18 +63,18 @@ $(document).ready(function() {
 			console.dir(curr);
 		}
 		
-		console.log("AFTER");
-		console.log("owed");
-		console.dir(owed);
-		console.log("owers");
-		console.dir(owers);
-		console.log("neithers");
-		console.dir(neither);
-		
 		/*
 			1. Look for negatives. Means they are owed $$
 			2. Positives owe negatives.
 		*/
+		var output = "<ul class='results'>";
+		for(var i = 0; i < owed.length; i++) {
+			output += "<li class='result_item'>"
+			var curr = owed[i];
+			output += "<h3 class='name'><span class='bold'>" +curr.name +"</span>&nbsp;";
+			output += "<span class='green'>" +Math.abs(curr.amountOwed);
+		}
+		
 		
 		
 		//$('#quicksplit_results').html('submit was clicked!');

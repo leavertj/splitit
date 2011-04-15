@@ -313,3 +313,31 @@ body {
 	float: right;
 	margin-right: 100px;
 }
+
+#quicksplit_result {
+	
+}
+
+#quicksplit_result .results {
+	list-style-type: none;
+}
+
+.result_item .name {
+	font-size: 20px;
+}
+
+.result_item .description {
+	margin-left: 20px;
+}
+
+.result_item .owed {
+	margin-bottom: 10px;
+}
+
+.result_item .green {
+	color: #008C00;
+}
+
+.result_item .red {
+	color: #B02B2C;
+}
