@@ -336,8 +336,10 @@ body {
 
 .result_item .green {
 	color: #008C00;
+	padding-left: 10px;
 }
 
 .result_item .red {
 	color: #B02B2C;
+	padding-left: 10px;
 }
