@@ -5,17 +5,76 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Registration</title>
-	<meta name="author" content="Michael Whidby">
+	<meta name="author" content="Vincent de Chacus">	
 	
+	<script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="../js/create_group.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<!-- Date: 2011-04-13 -->
+	<!-- Date: 2011-04-17 -->
 </head>
 <body>
-<div id="header">
-	<h1 id="logo">Letsplit.it</h1>
+<div id="header" class="bottom_padding">
+	<h1 id="logo">Split<span class="green">it</span></h1>
 </div>
-<div id="quicksplit">
-	Hello
+
+<div id="create_group">
+	
+	<h2 class="main_title">Registration</h2>	
+	<ul class="create_group_list">
+	
+		<li class="create_group_item">
+			<h3 class="create_group_title left">Name</h3>						
+		</li>
+		<li class="create_group_item">
+			<input class="input create_group_name left" />			
+		</li>
+		<li class="create_group_item">
+			<h3 class="create_group_title left">Email Address</h3>						
+		</li>
+		<li class="create_group_item">
+			<input class="input create_group_name left" />			
+		</li>
+		<li class="create_group_item">
+			<h3 class="create_group_title left">Username</h3>						
+		</li>
+		<li class="create_group_item">
+			<input class="input create_group_name left" />			
+		</li>
+		<li class="create_group_item">
+			<h3 class="create_group_title left">Password</h3>						
+		</li>
+		<li class="create_group_item">
+			<input class="input create_group_name left" />			
+		</li>
+		<li class="create_group_item">
+			<h3 class="create_group_title left">Confirm Password</h3>						
+		</li>
+		<li class="create_group_item">
+			<input class="input create_group_name left" />			
+		</li>
+		
+	</ul>
+	
+	
+	<div id="create_group_result">
+		<ul class="results">
+			<li class="result_item">
+				<h3 class="name"><span class="bold">Disclaimer</span></h3>
+				<ul>
+					<li class="owed">
+						I acknowledge that by registering, I agree to the terms of use of this website.
+					</li>					
+					<br />
+				</ul>
+				<a class="sidebar_link" href="index.html">Return to Home Page</a>	
+				<br />
+				<br />
+			</li>			
+		</ul>		
+	</div>
+	<p id="submit" class="top_border bottom_border">
+		<a class="submit" href="#">Sign Me Up!</a>
+	</p>
 </div>
 </body>
 </html>

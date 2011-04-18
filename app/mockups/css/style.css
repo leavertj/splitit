@@ -292,10 +292,6 @@ body {
 	border: 2px solid #89AC10;
 }
 
-.quicksplit_name {
-	
-}
-
 .quicksplit_amount {
 	width: 110px;
 	text-align: center;
@@ -336,10 +332,104 @@ body {
 
 .result_item .green {
 	color: #008C00;
-	padding-left: 10px;
 }
 
 .result_item .red {
 	color: #B02B2C;
-	padding-left: 10px;
+}
+
+/* Create group styling */
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+.create_group_list {
+	list-style-type: none;
+	padding-bottom: 30px;
+	width: 500px;
+	float: left;
+}
+
+.create_group_item {
+	padding-bottom: 10px;
+}
+
+.create_group_item .input_field {
+	width: 300px;
+}
+
+.create_group_item .input_field:focus {
+border: 2px solid #89AC10;
+}
+
+.create_group_title {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.clear {
+	clear: both;
+	padding-left: 30px;
+}
+
+/*index home page styling*/
+#index{
+	width: 800px;
+	clear: both;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+.index_list {
+	list-style-type: none;
+	margin-bottom: 0;
+	width: 400px;
+}
+
+.index_item {
+	padding-bottom: 10px;
+}
+
+.index_title {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#index .input {
+	font-size: 25px;
+	border: 1px solid #666;
+	height: 30px;
+}
+
+#index .input:focus {
+	border: 2px solid #89AC10;
+}
+
+.login_links {
+	float: left; 
+	width: 450px;
+	margin-left: 40px;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 200px;
+}
+
+#index .button {
+	width: 120px;
+	padding-right: 85px;
+}
+
+.quicksplit {
+	float: right;
+	padding-right: 100px;
+	margin-top: 100px;
+}
+
+.quick_split_button {
+	padding: 50px;
+	font-size: 20px;
 }

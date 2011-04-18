@@ -1,0 +1,455 @@
+body {
+	background-color: #E9F3D9;
+	color: #666666;
+	font: 16px "Trebuchet MS", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header styles */
+#header {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#logo {
+	font-size: 45px;
+	width: 150px;
+	float: left;
+	margin-left: 30px;
+}
+
+.green {
+	color: #A1C22D;
+}
+
+#top_links {
+	list-style-type: none;
+	margin-top: 0;
+	float: right;
+	width: 200px;
+}
+
+.top_link {
+	float: left;
+	padding-top: 10px;
+}
+
+.link {
+	text-decoration: none;
+	color: #89AC10;
+	padding: 10px 20px;
+	margin-right: 5px;
+	border: 1px solid #89AC10;
+}
+
+.link:hover {
+	background-color: #A1C22D;
+	color: #333;
+}
+
+.bottom_border {
+	border-bottom-right-radius: 5px;	
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;	
+	-moz-border-radius-bottomleft: 5px;
+}
+
+.top_border {
+	border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+}
+
+/* Body styles */
+#body {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	clear: both;
+}
+
+.main_links {
+	margin-left: 200px;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.main_link {
+	float: left;
+}
+
+/* Left sidebar styles */
+#left_sidebar {
+	width: 200px;
+	padding-top: 20px;
+	float: left;
+}
+
+.sidebar_header {
+	font-size: 22px;
+	border-bottom: 1px solid #666;
+	text-align: center;
+	padding-top: 20px;
+	margin: 10px 5px;
+	padding-bottom: 5px;
+}
+
+.sidebar_list {
+	list-style-type: none;
+}
+
+.sidebar_list_item {
+	clear: both;
+	padding: 5px;
+}
+
+.sidebar_pic {
+	float: left;
+}
+
+.sidebar_link {
+	text-decoration: none;
+	color: #666;
+	padding-left: 10px;
+}
+
+.sidebar_link:hover {
+	text-decoration: underline;
+}
+
+.button {
+	width: 200px;
+	margin: 20px auto;
+}
+
+.add_top_margin {
+	margin-top: 40px;
+}
+
+.add_bill {
+	width: 130px;
+}
+
+
+/* Main content styles */
+.main_content {
+	width: 550px;
+	float: left;
+	border: 1px solid #89AC10;
+	margin: 0px 20px;
+}
+
+.no_right_content {
+	width: 700px;
+}
+
+.no_left_content {
+	margin: 0 auto;
+	border: none;
+}
+
+.main_title {
+	font-size: 35px;
+	margin: 5px 10px;
+}
+
+/* News feed styles */
+#feed {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+}
+
+.feed_item {
+	border: 1px solid #999;
+	margin: 10px 5px;
+	padding: 10px;
+	height: 50px;
+}
+
+.feed_icon {
+	float: left;
+}
+
+.feed_desc {
+	margin: 0;
+	padding: 0 5px 5px 5px;
+	padding-left: 60px;
+}
+
+.your_cont {
+	margin: 0;
+	padding: 10px 5px 10px 5px;
+	font-size: 12px;
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+	color: #444;
+}
+
+
+/* Add a bill styles */
+#add_form {
+	margin: 30px 20px 20px;
+}
+
+.form_fields {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.form_fields .first {
+	padding-top: 20px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.legend {
+	font-size: 20px;
+}
+
+.input_field {
+	font-size: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #999;
+}
+
+.form_item {
+	padding-bottom: 20px;
+}
+
+#submit {
+	clear: both;
+	text-decoration: none;
+	padding: 10px 20px;
+	width: 200px;
+	margin: 0px auto 20px auto;
+	text-align: center;
+	background-color: #A1C22D;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
+
+.submit {
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	color: #333;
+}
+
+.group_picker {
+	list-style-type: none;
+	float: right;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+
+/* Right sidebar styles */
+#right_sidebar {
+	float: right;
+	width: 200px;
+}
+
+/* Quick split styling */
+#quicksplit {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #89AC10;
+	clear: both;
+}
+
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+.quicksplit_list {
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+
+.quicksplit_item {
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#quicksplit .input {
+	font-size: 20px;
+	border: 1px solid #666;
+	height: 30px;
+}
+
+#quicksplit .input:focus {
+	border: 2px solid #89AC10;
+}
+
+.quicksplit_name {
+	
+}
+
+.quicksplit_amount {
+	width: 110px;
+	text-align: center;
+}
+
+.quicksplit_title {
+	font-weight: bold;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	margin-right: 100px;
+}
+
+#quicksplit_result {
+	
+}
+
+#quicksplit_result .results {
+	list-style-type: none;
+}
+
+.result_item .name {
+	font-size: 20px;
+}
+
+.result_item .description {
+	margin-left: 20px;
+}
+
+.result_item .owed {
+	margin-bottom: 10px;
+}
+
+.result_item .green {
+	color: #008C00;
+}
+
+.result_item .red {
+	color: #B02B2C;
+}
+
+/* Create group styling */
+#create_group {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #89AC10;
+	clear: both;
+}
+
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+.create_group_list {
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+
+.create_group_item {
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#create_group .input {
+	font-size: 35px;
+	border: 1px solid #666;
+	height: 30px;
+}
+
+#create_group .input:focus {
+	border: 2px solid #89AC10;
+}
+
+.left {
+	float: left;
+	
+}
+
+.right {
+	float: right;
+	margin-right: 100px;
+}
+
+/*index home page styling*/
+#index{
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid #89AC10;
+	clear: both;
+}
+
+.bottom_padding {
+	padding-bottom: 150px;
+}
+
+
+.index_list {
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+
+.index_item {
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#index .input {
+	font-size: 25px;
+	border: 1px solid #666;
+	height: 30px;
+}
+
+#index .input:focus {
+	border: 2px solid #89AC10;
+}
+
+/*login and register button styling*/
+a.button {
+	background: none;
+    color: #333;
+    /*display: block;*/
+    float: left;    
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 10px 20px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+	clear: both;
+	text-decoration: none;
+	padding: 10px 18px; /*left alignment*/
+	width: 200px;
+	margin: 10px 50px ;
+	text-align: center;
+	background-color: #A1C22D;
+	
+} 
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+} 
+
