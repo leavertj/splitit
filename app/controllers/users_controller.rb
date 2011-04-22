@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
+  include SessionsHelper
   def index
     @users = User.all
 
@@ -69,6 +70,15 @@ class UsersController < ApplicationController
   # DELETE /users/1.xml
   def destroy
     @user = User.find(params[:id])
+	
+	@groupmembers = Groupmember.where("user_id = ?",params[:id])
+	@groupmember.each do |member|
+		member.destroy
+	end
+		
+	end
+	
+	
     @user.destroy
 
     respond_to do |format|

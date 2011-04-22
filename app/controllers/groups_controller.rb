@@ -1,6 +1,7 @@
 class GroupsController < ApplicationController
   # GET /groups
   # GET /groups.xml
+  include SessionsHelper
   def index
     @groups = Group.all
 
@@ -25,11 +26,15 @@ class GroupsController < ApplicationController
   # GET /groups/new.xml
   def new
     @group = Group.new
-
+	@group.save
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @group }
     end
+	#make creator a group member
+	if (signed_in?) then
+		@group.addUser(current_user.id)
+	end
   end
 
   # GET /groups/1/edit
@@ -51,6 +56,9 @@ class GroupsController < ApplicationController
         format.xml  { render :xml => @group.errors, :status => :unprocessable_entity }
       end
     end
+	if (signed_in?) then
+		@group.addUser(current_user.id)
+	end
   end
 
   # PUT /groups/1
@@ -73,11 +81,18 @@ class GroupsController < ApplicationController
   # DELETE /groups/1.xml
   def destroy
     @group = Group.find(params[:id])
+	@groupmembers = Groupmember.where("group_id = ?",params[:id])
+	@groupmembers.each do |member|
+		member.destroy
+	end
+	
     @group.destroy
-
     respond_to do |format|
       format.html { redirect_to(groups_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def join
   end
 end
