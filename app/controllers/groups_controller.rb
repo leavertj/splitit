@@ -56,9 +56,6 @@ class GroupsController < ApplicationController
         format.xml  { render :xml => @group.errors, :status => :unprocessable_entity }
       end
     end
-	if (signed_in?) then
-		@group.addUser(current_user.id)
-	end
   end
 
   # PUT /groups/1

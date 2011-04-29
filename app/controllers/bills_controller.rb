@@ -1,6 +1,11 @@
 class BillsController < ApplicationController
   # GET /bills
   # GET /bills.xml
+  
+  #Must include this helper everywhere you want to call session information
+  #i.e. current_user
+  include SessionsHelper
+  
   def index
     @bills = Bill.all
 
@@ -25,6 +30,8 @@ class BillsController < ApplicationController
   # GET /bills/new.xml
   def new
     @bill = Bill.new
+	@bill.user_id = current_user
+	@bill.save
 	@title = 'Create Bill'
   end
 
