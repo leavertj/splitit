@@ -29,7 +29,7 @@ class BillsController < ApplicationController
   # GET /bills/new
   # GET /bills/new.xml
   def new
-    @bill = Bill.new
+  @bill = Bill.new
 	@bill.user_id = current_user
 	@bill.save
 	@title = 'Create Bill'

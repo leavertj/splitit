@@ -2,7 +2,7 @@ class Bill < ActiveRecord::Base
 	has_many :user, :through => :billparticipant
 	
 	#Bill validations
-	validates :amount, :presence => true, :format => { :with => /^\d+??(?:\.\d{0,2})?$/ }
+	validates :amount, :presence => true, :format => { :with => /^\d+?(?:\.\d{0,2})?$/ }
 	validates :title, :presence => true
 	
 	def add_participant(uid, gid, shareIn)

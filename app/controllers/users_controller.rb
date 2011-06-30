@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
-	@title = 'Sign Up'
+    @title = 'Sign Up'
   end
 
   # GET /users/1/edit
@@ -69,16 +69,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.xml
   def destroy
-    @user = User.find(params[:id])
-	
-	@groupmembers = Groupmember.where("user_id = ?",params[:id])
-	@groupmember.each do |member|
-		member.destroy
-	end
-		
-	end
-	
-	
+
     @user.destroy
 
     respond_to do |format|
@@ -86,4 +77,6 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end
+

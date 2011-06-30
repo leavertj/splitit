@@ -33,7 +33,7 @@ class GroupsController < ApplicationController
     end
 	#make creator a group member
 	if (signed_in?) then
-		@group.addUser(current_user.id)
+		@group.createUser(current_user.id)
 	end
   end
 
