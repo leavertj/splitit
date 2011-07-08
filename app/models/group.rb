@@ -1,18 +1,15 @@
 class Group < ActiveRecord::Base
-	has_many :user, :through => :groupmember
-	
-	def addUser(uid)
-		@groupmember = Groupmember.new
-		@groupmember.group_id = self.id
-		@groupmember.user_id = uid
-		@groupmember.save
-	end
-	
-	def removeUser(uid)
-		@groupmembers = Groupmember.where("group_id = ? AND user_id = ?",
-			self.id, uid)
-		@groupmembers.each do |member|
-			member.destroy
-		end
-	end
+  has_many :user, :through => :groupmembers
+  has_many :groupmembers
+
+  def addMember(uid)
+    groupmembers.create(:user_id => uid, :group_id => id)
+  end
+
+  def removeMember(uid)
+    @groupmembers = groupmembers.where("group_id = ? AND user_id = ?",
+                                       id, uid)
+    groupmembers.delete(@groupmembers)
+  end
 end
+

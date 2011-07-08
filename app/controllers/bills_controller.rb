@@ -29,8 +29,6 @@ class BillsController < ApplicationController
   # GET /bills/new.xml
   def new
   @bill = Bill.new
-	@bill.user_id = current_user
-	@bill.save
 	@title = 'Create Bill'
   end
 
@@ -46,6 +44,10 @@ class BillsController < ApplicationController
 
     respond_to do |format|
       if @bill.save
+        if signed_in?
+          @bill.billparticipants.create({:user_id => current_user.id})
+        end
+
         format.html { redirect_to(@bill, :notice => 'Bill was successfully created.') }
         format.xml  { render :xml => @bill, :status => :created, :location => @bill }
       else
