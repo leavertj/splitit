@@ -1,10 +1,11 @@
 class SessionsController < ApplicationController
-  include SessionsHelper
+  skip_before_filter :authorize
   def new
-
+    @title = "Sign In"
   end
 
   def create
+    @title = "Sign In"
     user = User.authenticate(params[:session][:email],
                              params[:session][:password])
     if user.nil?

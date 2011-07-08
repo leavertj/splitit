@@ -1,6 +1,6 @@
-<% if not @user.nil? %>
+
 <% if @user.errors.any? %>
-  <div id="error_explanation">
+  <div id="error_message">
     <h2><%= pluralize(@user.errors.count, "error") %> 
         prohibited this user from being saved:</h2>
     <p>There were problems with the following fields:</p>
@@ -11,7 +11,7 @@
     </ul>
   </div>
 <% end %>
-<% end %>
+
 
 <% if not @bill.nil? %>
 <% if @bill.errors.any? %>

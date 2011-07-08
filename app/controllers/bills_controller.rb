@@ -4,7 +4,6 @@ class BillsController < ApplicationController
   
   #Must include this helper everywhere you want to call session information
   #i.e. current_user
-  include SessionsHelper
   
   def index
     @bills = Bill.all

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
-  include SessionsHelper
+  skip_before_filter :authorize, :only => [:new, :create]
   def index
     @users = User.all
 
@@ -25,8 +25,8 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.xml
   def new
+    @title = "Sign Up"
     @user = User.new
-    @title = 'Sign Up'
   end
 
   # GET /users/1/edit
@@ -44,8 +44,7 @@ class UsersController < ApplicationController
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        render 'new'
       end
     end
   end
